@@ -5,8 +5,13 @@ import data.Person
 fun main() {
 
     val budhi = Person(); // instance
-    val adam = Person();
+    budhi.firstName = "budhi"
+    budhi.lastName = "oct"
 
-    println(budhi)
-    println(adam)
+    val adam = Person();
+    adam.firstName = "adam"
+    adam.lastName = "husein"
+
+    println("${budhi.firstName} ${budhi.lastName}")
+    println("${adam.firstName} ${adam.lastName}")
 }
