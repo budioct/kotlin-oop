@@ -30,6 +30,16 @@ class Person(
         println("Hello $name, My name is $firstName")
     }
 
+    // overloading
+    fun sayHello(say: Boolean) {
+        println("$say, My name is $firstName")
+    }
+
+    fun sayHello(name: String, lastName: String?){
+        println("Hello $name, My name is $firstName $lastName")
+    }
+    // overloading
+
     fun run() {
         println("I 'm Run")
     }
