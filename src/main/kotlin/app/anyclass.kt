@@ -8,7 +8,7 @@ fun main() {
     val smartPhone = SmartPhone("samsung", "android")
     println("name: ${smartPhone.name} os: ${smartPhone.os}")
 
-    val laptop = Laptop("ubuntu", "linux")
+    val laptop = Laptop("acer", "linux")
     println("name: ${laptop.name} os: ${laptop.os}")
 
 
