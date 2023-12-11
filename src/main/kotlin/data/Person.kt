@@ -26,8 +26,8 @@ class Person(
     var middleName: String? = middleName
     var lastName: String? = lastName
 
-    fun sayHello(name: String) {
-        println("Hello $name, My name is $firstName")
+    fun sayHello(firstName: String) {
+        println("Hello $firstName, My name is ${this.firstName}")
     }
 
     // overloading
