@@ -8,4 +8,8 @@ class User(var usernameParam: String, var passwordParam: String) {
     // var username: String = usernameParam
     // var password: String = passwordParam
 
+    override fun toString(): String {
+        return "User with username=$usernameParam"
+    }
+
 }
