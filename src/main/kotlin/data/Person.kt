@@ -13,7 +13,7 @@ class Person(
         println("Person $firstName dibuat")
     }
 
-    // secondary constructor
+    // secondary constructor wajib memangil primary constructor.. // this memangil constructor primary(pertama)
     constructor(firstName: String, lastName: String?) : this(firstName, null, lastName) {
         println("secondary constructor 1")
     }

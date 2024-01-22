@@ -6,7 +6,7 @@ class Address {
     var city: String = ""
     var country: String = "Indonesia"
 
-    // secodary constructor
+    // secodary constructor.. ini tidak punya mandatory constructor primary jadi tidak wajib memangil
     constructor(street: String, city: String) {
         this.street = street
         this.city = city

@@ -4,7 +4,7 @@ import data.Person
 
 fun main() {
 
-    val budhi = Person("budhi", null, "oct"); // instance
+    val budhi = Person("budhi", null, "oct"); // instance object tidak perlu kata new seperti di java
 //    budhi.firstName = "budhi"
 //    budhi.lastName = "oct"
 
@@ -17,6 +17,6 @@ fun main() {
 
     println("${budhi.firstName} ${budhi.lastName}")
     println("${adam.firstName} ${adam.lastName}")
-    println("${husein.firstName} ${husein.lastName}")
     println("${jamal.firstName} ")
+    println("${husein.firstName} ${husein.lastName}")
 }
