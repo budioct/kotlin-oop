@@ -2,6 +2,13 @@ package data
 
 class Mahasiswa(val name: String, val nim: String)
 
+// attribute / field / properties extension
+val Mahasiswa.upperName : String
+    get() = this.name.toUpperCase()
+
+val Mahasiswa.lowerName : String
+    get() = this.name.toLowerCase()
+
 // method extension
 fun Mahasiswa?.sayHello(name: String) {
     // able null with keyword ? condition

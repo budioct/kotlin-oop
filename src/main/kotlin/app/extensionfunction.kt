@@ -1,7 +1,9 @@
 package app
 
 import data.Mahasiswa
+import data.lowerName
 import data.sayHello
+import data.upperName
 
 fun main() {
 
@@ -11,4 +13,9 @@ fun main() {
     val jamal: Mahasiswa? = Mahasiswa("jamal", "1111555544")
     jamal.sayHello("asep")
 
+    println("uppercase : ${budhi.upperName}")
+    println("uppercase : ${jamal?.upperName}")
+
+    println("lowercase : ${budhi.lowerName}")
+    println("lowercase : ${jamal?.lowerName}")
 }
