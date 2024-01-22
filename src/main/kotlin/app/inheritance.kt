@@ -7,6 +7,7 @@ import data.VicePresident
 
 fun main() {
 
+    // inheritance
     val employee = Employee("budhi")
     val manager = Manager("adam")
     val vicePresident = VicePresident("husein")
@@ -17,5 +18,8 @@ fun main() {
     vicePresident.sayHello("udin")
     superManager.sayHello("udin")
 
+    // override method
+    val availableOverrideFunction = SuperManager("Asik")
+    availableOverrideFunction.availableOverride("bisa override")
 
 }
