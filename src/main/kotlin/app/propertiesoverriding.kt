@@ -11,7 +11,9 @@ fun main() {
     val triangle = Triangle()
 
     println(shape.corner)
+    shape.printName()
     println(rectangle.corner)
+    rectangle.printName()
     println(triangle.corner)
 
 }
