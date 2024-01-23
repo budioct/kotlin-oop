@@ -2,7 +2,7 @@ package data
 
 class Application(val name: String) {
 
-    // singleton
+    // singleton object
     object Utilities {
 
         // keyword object digunakan untuk membuat singleton.. singleton tidak bisa dibuatkan constructor karna tidak ada class
@@ -14,4 +14,16 @@ class Application(val name: String) {
         }
 
     }
+
+    // companion object
+    companion object {
+
+        // Companion object adalah kemampuan membuat inner object di dalam class, tanpa harus menggunakan nama object
+        // Companion object secara otomatis akan menggunakan nama Companion, atau bisa langsung diakses lewat nama class nya
+
+        fun hello(name: String): Unit {
+            println("Hello dear $name")
+        }
+    }
+
 }
