@@ -1,5 +1,6 @@
 package data
 
+// keyword inline hanya boleh ada 1 attribute / properties / field
 inline class Token(val value: String) {
 
     /**
