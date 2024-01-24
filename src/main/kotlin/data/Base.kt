@@ -9,12 +9,17 @@ interface Base {
      * ● Kotlin mendukung delegation tanpa harus membuat kode secara manual
      */
     fun sayHello(name: String)
+    fun sayGoodBay(name: String)
 }
 
 // implement
 class MyBase : Base {
     override fun sayHello(name: String) {
         println("Hello from MyBase $name")
+    }
+
+    override fun sayGoodBay(name: String) {
+        println("GoodBay from MyBase $name")
     }
 
 }
@@ -24,10 +29,13 @@ class DelegateManual(val base: Base) : Base {
     override fun sayHello(name: String) {
         base.sayHello(name)
     }
+    override fun sayGoodBay(name: String) {
+        base.sayGoodBay(name)
+    }
 
 }
 
-// Deletation native
+// Deletation native. tidak perlu lagi implement method override ke body class Delegate
 class Delegate(val base: Base) : Base by base
 
 
@@ -40,5 +48,9 @@ class Delegate(val base: Base) : Base by base
 class DelegateOverride(val base: Base) : Base by base {
     override fun sayHello(name: String) {
         println("Hello from OverrideDelegate $name")
+    }
+
+    override fun sayGoodBay(name: String) {
+        println("GoodBay from OverrideDelegate $name")
     }
 }

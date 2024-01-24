@@ -14,4 +14,8 @@ fun main() {
     delegate.sayHello("budhi")
     delegateManual.sayHello("malik")
     delegateOverride.sayHello("husein")
+
+    // delegasi manual dan override(costume function)
+    delegateManual.sayGoodBay("jamal")
+    delegateOverride.sayGoodBay("asep")
 }
